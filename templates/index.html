@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Parvo Risk Analyzer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+		<link rel="shortcut icon" href="../static/images/favicon.ico">
+	  	<link rel="apple-touch-icon" href="../static/images/favicon.ico">
+	  	<link rel="icon" sizes="192x192" href="../static/images/favicon.ico">
+	</head>
+	<link rel= "stylesheet" type= "text/css" href= "/static/assests/css/font-awesome.min.css">
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="logo"><img src="../static/images/logo.jpg" alt="APA Logo"/></a>
+					<h1>Does your dog have <strong>Parvo?</strong>
+					Check your dog's treatment options against
+					other dogs' <a href="#two" id="here">here</a>.</h1>
+					<h1><strong><a href="adopt.html">Or, if you want to adopt, click here</a></strong></h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<img id = "dog" src="../static/images/dog.jpg" alt="dog" width="400px"/>
+							<h2>What is Parvo?<br />
+							The risks, symptoms, and treatments</h2>
+						</header>
+						<p>Parvovirus is a viral disease of dogs. It affects unvaccinated dogs, typically as young puppies. The virus grows in rapidly dividing cells. The intestinal lining has the greatest concentration of rapidly dividing cells in a puppy's body. The virus attacks and kills these cells, causing diarrhea (often bloody), depression and suppression of white blood cells -- which come from another group of rapidly dividing cells. In very young puppies it can infect the heart muscle and lead to sudden death. Chance of survival with no treatment is less than 10% and depends on age and weight.</p>
+						<ul class="actions">
+							<li><a target="_blank" href="https://sites.google.com/site/apaparvowiki/" class="button">Learn More at the Wiki</a></li>
+						</ul>
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h1>Parvo Treatment Analyzer</h1>
+						<p>Enter in you dog's symptoms and characteristics here, and we will tell you what treatements are proving most effective. After submitting, your treatment plan graph will show up below:</p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="POST" action='/'>
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="attitude" placeholder="Attitude" /></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="paw" placeholder="Paw Temperature" /></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="vomit" placeholder="Vomiting?" /></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="gum" placeholder="Gum Color" /></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="distemper" placeholder="On Distemper Watch?" /></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="appetite" placeholder="Appetite" /></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="Feces" placeholder="Feces" /></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="water" placeholder="Drinking Water?" /></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="weight" placeholder="Intake Weight" /></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="sex" placeholder="Sex" /></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="age" placeholder="Age at Intake?" /></div>
+										
+									</div>
+								<p/>
+								<ul class="actions">
+									<li><input type="submit" value="Submit" /></li>
+									<input type="hidden" name="_next" value="index.html" />
+
+								</ul>
+								</form>
+								<p/>
+							<article class="col-6 col-12-xsmall work-item">
+								<h2> Death Rate: </h2>
+								<h2> {{ user_input }} </h2>
+								<img src="{{ user_image }}" width="150%" alt="graph" />
+								
+								
+
+							</article>
+						</div>
+						<!-- <br/>
+						<ul class="actions">
+							<li><a href="#three" class="button">Contact a Vet</a></li>
+						</ul> -->
+					</section>
+
+				<!-- Three -->
+					<section id="three">
+						<h2>Contact a Vet</h2>
+						<p>If you think a dog might need Parvo treatment, please contact a vet through this form. <br />
+						Indicate the symptoms and potential treatment plan, and someone will be over soon.</p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="POST" action="https://formspree.io/varshusree@gmail.com">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+								<p/>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+									<input type="hidden" name="_next" value="index.html" />
+
+								</ul>
+								</form>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									
+									<li>
+										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+										000-000-0000
+									</li>
+									<li>
+										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+										<a href="mailto:example@example.com">example@example.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a target="_blank" href="https://twitter.com/austinpetsalive?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#three" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+					
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
